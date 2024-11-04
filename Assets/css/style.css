@@ -39,6 +39,10 @@
     padding: 14px;
 }
 
+.sign-in-btn:hover{
+    box-shadow: 0px 0px 4px rgb(123, 130, 209);
+}
+
 ::placeholder{
     color: rgba(145,151,166);
 }
@@ -72,6 +76,11 @@ border-radius: 6px;
 border: 1px solid rgba(228,234,247);
 }
 
+.google-btn:hover,
+.fb-btn:hover{
+    box-shadow: 0px 0px 4px rgb(123, 130, 209);
+}
+
 .fb-btn{
     margin-left: 10px;
 }
@@ -79,8 +88,16 @@ border: 1px solid rgba(228,234,247);
 .box-1{
     width: 100%;  
 }
-.box-2{
-    width: 100% !important;
-    height: 100% !important;
+
+.bg-linear-grandient-blue{
     background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+}
+
+.w-100{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(98,101,109);
 }
