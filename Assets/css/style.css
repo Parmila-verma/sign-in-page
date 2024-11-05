@@ -5,14 +5,23 @@
     background-image: url(../img/Sign\ in.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .text-blue {
     color: rgba(37, 99, 235);
 }
 
-.text-grey{
-    color: rgba(98,101,109);
+.pointer {
+    cursor: pointer;
+}
+
+.text-grey {
+    color: rgba(98, 101, 109);
+}
+
+.heading {
+    text-align: left !important;
 }
 
 .form-heading {
@@ -27,77 +36,168 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    color: rgba(98,101,109);
+    color: rgba(98, 101, 109);
 }
 
-.sign-in-btn{
-    background-color: rgba(35,129,247);
+.sign-in-btn {
+    background-color: rgba(35, 129, 247);
     width: 100%;
     max-width: 340px;
-    border: 1px solid  rgba(35,129,247);
+    border: 1px solid rgba(35, 129, 247);
     border-radius: 50px;
     padding: 14px;
 }
 
-.sign-in-btn:hover{
+.sign-in-btn:hover {
     box-shadow: 0px 0px 4px rgb(123, 130, 209);
 }
 
-::placeholder{
-    color: rgba(145,151,166);
+::placeholder {
+    color: rgba(145, 151, 166);
+    padding-left: 30px;
 }
 
-.sign-in-form{
+.sign-in-form {
     max-width: 340px;
 }
 
 .email,
-.password{
-    background-color: rgba(245,248,255);
+.password {
+    background-color: rgba(245, 248, 255);
     width: 100%;
     max-width: 340px;
     border-radius: 6px;
-    border: 1px solid rgba(228,234,247);
+    border: 1px solid rgba(228, 234, 247);
     padding: 10px;
 }
 
-.checkbox-text{
-    color: rgba(98,101,109);
+.checkbox-text {
+    color: rgba(98, 101, 109);
 }
 
-hr{
-    max-width: 80px;
+hr {
+    max-width: 340px;
+}
+hr::after{
+    content: "or continue with";
 }
 
 .google-btn,
-.fb-btn{
-padding: 10px 35px;
-border-radius: 6px;
-border: 1px solid rgba(228,234,247);
+.fb-btn {
+    padding: 10px 35px;
+    border-radius: 6px;
+    border: 1px solid rgba(228, 234, 247);
+
+    a {
+        text-decoration: none;
+        color: rgba(98, 101, 109);
+    }
 }
 
 .google-btn:hover,
-.fb-btn:hover{
+.fb-btn:hover {
     box-shadow: 0px 0px 4px rgb(123, 130, 209);
 }
 
-.fb-btn{
+.fb-btn {
     margin-left: 10px;
 }
 
-.box-1{
-    width: 100%;  
-}
-
-.bg-linear-grandient-blue{
+.bg-linear-grandient-blue {
     background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: rgba(98,101,109);
+/* .blue-background {
+    background-image: url(../img/ractangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 620px;
+    height: 600px;
+} */
+
+/* .blue-card {
+    position: relative;
+} */
+
+.sign-in-section::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    left: 50%;
+    background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    height: 100%;
+    width: 50%;
 }
+
+
+.fb {
+    top: 21%;
+    left: 57%;
+    z-index: 3;
+}
+
+.linked-in {
+    top: 37%;
+    left: 57%;
+    z-index: 3;
+}
+
+.twitter {
+    top: 56%;
+    left: 57%;
+    z-index: 3;
+}
+
+.instagram {
+    top: 73%;
+    left: 57%;
+    z-index: 3;
+}
+
+.union {
+    top: 25% !important;
+    left: 60% !important;
+    z-index: 2 !important;
+}
+
+.circle {
+    top: 13%;
+    left: 57%;
+    z-index: 2;
+}
+
+.content-list{
+    z-index: 2; 
+    left: 75%;
+    top: 32%;
+}
+
+.list{
+    top: 32%;
+    left: 87%;
+    z-index: 2; 
+}
+
+.svg-2{
+    left: 7.5%;
+    top: 48%;
+}
+
+/* .vector-1{
+    z-index: 99;
+    top: 20%;
+    left: 20%;
+}
+.vector-2{
+    top: 20%;
+    left: 20%;
+}
+.vector-3{
+    top: 50%;
+    left: 20%;
+} */
