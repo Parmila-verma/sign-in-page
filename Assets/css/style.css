@@ -54,7 +54,10 @@
 
 ::placeholder {
     color: rgba(145, 151, 166);
-    padding-left: 30px;
+}
+
+input {
+    padding-left: 40px !important;
 }
 
 .sign-in-form {
@@ -78,8 +81,13 @@
 hr {
     max-width: 340px;
 }
-hr::after{
+
+hr::after {
     content: "or continue with";
+    position: relative;
+    left: 35%;
+    top: -10px;
+    z-index: 99;
 }
 
 .google-btn,
@@ -103,9 +111,9 @@ hr::after{
     margin-left: 10px;
 }
 
-.bg-linear-grandient-blue {
+/* .bg-linear-grandient-blue {
     background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
-}
+} */
 
 .w-100 {
     width: 100%;
@@ -116,65 +124,172 @@ hr::after{
     position: absolute;
     right: 0%;
     left: 50%;
-    background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    /* background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%); */
+    background-image: url("../img/ractangle.png");
     height: 100%;
     width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
 .fb {
-    top:-2%;
+    top: 2%;
     left: 24%;
     z-index: 3;
 }
 
 .linked-in {
-    top: 10%;
-    left: 24%;
-    z-index: 3;
-}
-
-.twitter {
-    top: 35%;
+    top: 24%;
     left: 24%;
     z-index: 3;
 }
 
 .instagram {
-    top: 23%;
+    top: 48%;
+    left: 24%;
+    z-index: 3;
+}
+
+.twitter {
+    top: 68%;
     left: 24%;
     z-index: 3;
 }
 
 .union {
-    top: -500px!important;
-    left: 32% !important;
+    top: 7% !important;
+    left: 35% !important;
     z-index: 2 !important;
 }
 
-.circle {
-   left: 20%;
+.z-index-1 {
+    z-index: 1;
+}
+
+/* .circle {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+} */
+
+.circle{
+    width: 90%;
+    top:-10%;
+}
+.content-list {
     z-index: 2;
-    top: -70px;
+    left: 65%;
+    top: 15%;
 }
 
-.content-list{
-    z-index: 2; 
-    left: 63%;
-    top: 5%;
+.list {
+    top: 15%;
+    left: 85%;
+    z-index: 2;
 }
 
-.list{
-    top: 5%;
-    left: 80%;
-    z-index: 2; 
-}
-.svg-1,.svg-2{
-  left: 10px;
-  bottom:40px !important;
+.svg-1,
+.svg-2 {
+    left: 10px;
+    bottom: 40px !important;
 }
 
-.eye{
+.eye {
     left: 83%;
-    bottom:40px;
+    bottom: 40px;
+}
+
+@media (max-width:767.98px) {
+    .sign-in-section::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("../img/ractangle.png");
+        /* height: 400px; */
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .circle {
+        top: 50px !important;
+    } 
+
+    .union {
+        top: 46px !important;
+        left: 13% !important;
+    }
+
+    .fb {
+        top: 24px;
+        left: 0%;
+    }
+
+    .linked-in {
+        top: 124px !important;
+        left: 0%;
+    }
+
+    .instagram {
+        top: 232px;
+        left: 0%;
+    }
+
+    .twitter {
+        top: 334px;
+        left: 0%;
+    }
+
+    .content-list {
+        top: 130px;
+        left: 200px;
+        width: 20%;
+    }
+
+    .list {
+        top: 130px;
+        left: 255px;
+        width: 11.8%;
+    }
+
+    .bg-linear-grandient-blue {
+        background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    }
+
+    .google-btn,
+    .fb-btn {
+        padding: 10px 20px;
+
+    }
+}
+
+@media (max-width:576px) {
+    /* .circle {
+        width: 70%;
+        left: 0%;
+        top: 50px !important;
+    } */
+
+    .bg-linear-grandient-blue {
+        background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    }
+}
+
+@media (min-width:576px) {
+    /* .circle {
+        max-width: 500px;
+         height: 500px; 
+        aspect-ratio: 1/1;
+          position: absolute;
+        left: 830.18px;
+        top: 144.85px;   
+        background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+        border-radius: 50%;
+    } */
 }
