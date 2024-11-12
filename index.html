@@ -12,7 +12,7 @@
 
 <body>
     <section class="sign-in-section d-flex align-items-center justify-content-center min-vh-100 position-relative">
-        <div class="container position-relative z-index-1">
+        <div class="container-fluid position-relative z-index-1">
             <p class="heading text-center mb-5"> <svg width="277" height="48" viewBox="0 0 277 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -68,12 +68,12 @@
             </p>
             <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
+                <div class="col-12 col-lg-6 mb-4">
                     <h3 class="form-heading">Sign in</h3>
                     <p class="form-p">Don’t have an account? <span class="text-blue pointer">Register here</span></p>
                     <form class="sign-in-form ">
                         <input type="email" placeholder="Email" class="email"><label
-                         class="svg-1 position-relative"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            class="svg-1 position-relative"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M3 3H15C15.825 3 16.5 3.675 16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5C1.5 3.675 2.175 3 3 3Z"
@@ -94,7 +94,7 @@
                                     stroke="#9197A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </label>
-                        <label class="eye position-relative"> <svg width="18" height="18" viewBox="0 0 18 18"
+                        <label class="eye position-relative pointer"> <svg width="18" height="18" viewBox="0 0 18 18"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_80318_150)">
                                     <path
@@ -111,9 +111,11 @@
                                 me</span>
                             <span class="float-end pointer"> Forgot password?</span></p><br>
                         <button class=" sign-in-btn text-center text-white mb-2 ">Sign in</button>
-                        <p class="d-flex text-grey">
-                            <hr>
-                        </p><br>
+                        <div class="d-flex align-items-center text-grey justify-content-center">
+                            <div class="line"></div>
+                            or continue with
+                            <div class="line"></div>
+                        </div><br>
                         <button class="google-btn text-center bg-white"><a href="https://www.google.com/"><svg
                                     width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -150,20 +152,20 @@
                                 Facebook </a></button>
                     </form>
                 </div>
-                <div class="col-12 col-md-6 position-relative">
-                    <!-- <div class="circle"></div> -->
-                          <a href="https://www.facebook.com/"> <img src="./Assets/img/fb.png" alt="loading"
+                <div class="col-12 col-lg-6  position-relative">
+                        <img src="./Assets/img/full-circle.png" alt="loading" class=" circle position-absolute" width="450px"> 
+                         <img src="./Assets/img/Union.png" alt="loading" class="union  position-absolute"> 
+
+                        <a href="https://www.facebook.com/"> <img src="./Assets/img/fb.png" alt="loading"
                                 class="fb position-absolute"></a>
                         <a href="https://in.linkedin.com/"><img src="./Assets/img/linked in.png" alt="loading"
                                 class="linked-in position-absolute"></a>
                         <a href="https://www.instagram.com/"> <img src="./Assets/img/instagram.png" alt="loading"
                                 class="instagram  position-absolute"></a>
                         <a href="https://x.com/"> <img src="./Assets/img/twitter.png" alt="loading"
-                                class="twitter  position-absolute"></a>
-                         <img src="./Assets/img/circle.png" alt="loading" class="circle  position-absolute "> 
-                        <img src="./Assets/img/Union.png" alt="loading" class="union  position-absolute">
-                        <img src="./Assets/img/content-ing.png" alt="loading" class="content-list position-absolute">
-                        <img src="./Assets/img/list.png" alt="loading" class="list  position-absolute">  
+                                class="twitter  position-absolute"></a> 
+                        <img src="./Assets/img/content-img.png" alt="loading" class="content-list position-absolute">
+                    
                 </div>
             </div>
         </div>
